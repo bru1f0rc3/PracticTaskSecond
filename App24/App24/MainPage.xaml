@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App24.MainPage">
+
+    <RelativeLayout>
+        <Label Text="A="
+               RelativeLayout.XConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.5,
+            Constant=-300}"
+               RelativeLayout.YConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.4}"
+               FontSize="25"/>
+        <Label Text="B="
+               RelativeLayout.XConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.5,
+            Constant=-300}"
+               RelativeLayout.YConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.6}"
+               FontSize="25"/>
+        <Entry Placeholder="Введите число"
+               RelativeLayout.WidthConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.7}"
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.17,
+            Constant=-25}"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.39}"
+               x:Name="TbNumberA"/>
+        <Entry Placeholder="Введите число"
+               RelativeLayout.WidthConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.7}"
+               RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.17,
+            Constant=-25}"
+               RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.58}"
+               x:Name="TbNumberB"/>
+        <Button Text="Вычислить"
+                RelativeLayout.YConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.8}"
+                RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.1}"
+                Clicked="Button_Clicked"/>
+        <Button Text="Закрыть"
+                RelativeLayout.YConstraint="{ConstraintExpression 
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=0.8}"
+                RelativeLayout.XConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.35}"
+                Clicked="Button_Clicked_1"/>
+    </RelativeLayout>
+</ContentPage>
